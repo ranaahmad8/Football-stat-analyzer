@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Stats</title>
+  <style>
+    body {
+      margin: 10;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0b132b;
+      color: #ffffff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:15px 55px;
+      background: #0f172a;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover { color: #4f7cff; }
+
+    .page-title { padding: 30px 40px; }
+
+    .players {
+      padding: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .player-card {
+      display: flex;
+      background: #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border: 1px solid #334155;
+    }
+
+    .player-img {
+      width: 280px;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .player-info {
+      padding: 25px;
+      flex: 1;
+    }
+
+    h2 { margin: 0; font-size: 28px; }
+
+    .sub {
+      color: #94a3b8;
+      font-size: 14px;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .stats-grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .stat {
+      background: #0f172a;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .stat b {
+      display: block;
+      font-size: 20px;
+      color: #ffffff;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">⚽ Football Stats</div>
+    <nav>
+      <a href="index.html">Players</a>
+      <a href="comparison.html">Comparison</a>
+      <a href="heatmap.html">Heatmap</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page-title">
+    <h1>Top Football Players</h1>
+    <p> Statistics & Performance</p>
+  </section>
+
+  <section class="players">
+
+    <div class="player-card">
+      <img src="messi.jpeg" alt="Lionel Messi" class="player-img">
+      <div class="player-info">
+        <h2>Lionel Messi</h2>
+        <span class="sub">Inter Miami • Forward</span>
+        <div class="stats-grid">
+          <div class="stat">Goals<b>840</b></div>
+          <div class="stat">Assists<b>370</b></div>
+          <div class="stat">Matches<b>1070</b></div>
+          <div class="stat">Tackles<b>145</b></div>
+          <div class="stat">Interceptions<b>95</b></div>
+          <div class="stat">Dribbles<b>3000+</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="ronaldo.jpeg" alt="Cristiano Ronaldo" class="player-img">
+      <div class="player-info">
+        <h2>Cristiano Ronaldo</h2>
+        <span class="sub">Al-Nassr • Forward</span>
+        <div class="stats-grid">
+          <div class="stat">Goals<b>900+</b></div>
+          <div class="stat">Assists<b>250</b></div>
+          <div class="stat">Matches<b>1200+</b></div>
+          <div class="stat">Tackles<b>110</b></div>
+          <div class="stat">Interceptions<b>85</b></div>
+          <div class="stat">Dribbles<b>1600+</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="haaland.jpeg" alt="Erling Haaland" class="player-img">
+      <div class="player-info">
+        <h2>Erling Haaland</h2>
+        <span class="sub">Manchester City • Forward</span>
+        <div class="stats-grid">
+          <div class="stat">Goals<b>260</b></div>
+          <div class="stat">Assists<b>50</b></div>
+          <div class="stat">Matches<b>310</b></div>
+          <div class="stat">Tackles<b>45</b></div>
+          <div class="stat">Interceptions<b>30</b></div>
+          <div class="stat">Dribbles<b>210</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="mbappe.jpeg" alt="Kylian Mbappe" class="player-img">
+      <div class="player-info">
+        <h2>Kylian Mbappe</h2>
+        <span class="sub">Real Madrid • Forward</span>
+        <div class="stats-grid">
+          <div class="stat">Goals<b>330</b></div>
+          <div class="stat">Assists<b>125</b></div>
+          <div class="stat">Matches<b>450</b></div>
+          <div class="stat">Tackles<b>60</b></div>
+          <div class="stat">Interceptions<b>55</b></div>
+          <div class="stat">Dribbles<b>900+</b></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
